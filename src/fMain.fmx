@@ -1,0 +1,167 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  ActiveControl = tiHTMLSource
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnCloseQuery = FormCloseQuery
+  DesignerMasterStyle = 0
+  object MainMenu1: TMainMenu
+    Left = 296
+    Top = 136
+    object mnuFichier: TMenuItem
+      Text = '&Fichier'
+      object mnuQuitter: TMenuItem
+        Locked = True
+        Text = '&Quitter'
+        OnClick = mnuQuitterClick
+      end
+    end
+    object mnuAide: TMenuItem
+      Text = '&Aide'
+      object mnuAPropos: TMenuItem
+        Locked = True
+        Text = 'A p&ropos de'
+        OnClick = mnuAProposClick
+      end
+    end
+  end
+  object OlfAboutDialog1: TOlfAboutDialog
+    Titre = 'HTML Writer'
+    VersionNumero = '1.0'
+    VersionDate = '20240207'
+    MultiResBitmap = <
+      item
+      end>
+    URL = 'https://htmlwriter.olfsoftware.fr'
+    Licence.Strings = (
+      
+        'Ce logiciel est fourni tel quel, avec peut-'#234'tre des bogues ou sa' +
+        'ns. Aucune garantie sur son fonctionnement ni sur les donn'#233'es tr' +
+        'ait'#233'es n'#39'est propos'#233'e. Faites des backups !'
+      ''
+      
+        'C'#39'est un programme distribu'#233' en shareware. Si vous l'#39'utilisez (s' +
+        'urtout dans le cadre d'#39'une activit'#233' commerciale ou r'#233'mun'#233'ratrice' +
+        '), merci de ne pas oublier l'#39'auteur et de contribuer '#224' son d'#233'vel' +
+        'oppement par l'#39'achat d'#39'une licence.'
+      ''
+      '--'
+      ''
+      
+        'This software is supplied as is, with or without bugs. No warran' +
+        'ty is offered as to its operation or the data processed. Make ba' +
+        'ckups!'
+      ''
+      
+        'This program is distributed as shareware. If you use it (especia' +
+        'lly for commercial or income-generating purposes), please rememb' +
+        'er the author and contribute to its development by purchasing a ' +
+        'license.')
+    onURLClick = OlfAboutDialog1URLClick
+    Langue = FR
+    Left = 464
+    Top = 136
+  end
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 1
+    TabOrder = 2
+    TabPosition = Bottom
+    OnChange = TabControl1Change
+    Sizes = (
+      640s
+      454s
+      640s
+      454s)
+    object tiWYSIWYG: TTabItem
+      CustomIcon = <
+        item
+        end>
+      TextSettings.Trimming = None
+      IsSelected = False
+      Size.Width = 74.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'W&YSIWYG'
+      ExplicitSize.cx = 74.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object edtWYSIWYG: THtmlEditor
+        Align = Client
+        ClipChildren = True
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Size.Width = 638.000000000000000000
+        Size.Height = 452.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'ScrollBoxstyle'
+        TabOrder = 2
+        Styles.Strings = (
+          
+            'body {margin: 8 8} td, th {resize: horizontal} img, svg {resize:' +
+            ' both; draggable: true}')
+        HTML.Strings = (
+          '<p>&nbsp;</p>')
+        AutoHeight = False
+        Active = True
+        TouchScroll = False
+        ContentScale = 1.000000000000000000
+        AdaptiveZoom = False
+        EnableSelection = False
+        SelectHandleStyle = shPlatform
+        WebLoading = False
+        ScaleMin = 0.100000001490116100
+        ScaleMax = 100.000000000000000000
+        BlockHighlightColor = 1350598816
+        Encoding = heUTF8
+        Options = [eoCaretVisible, eoAnimateCaret, eoAddColMarks, eoAddRowMarks, eoSelectionToolbar, eoHighlightCurrentBlock, eoContextToolbar]
+        DefaultParaTag = 'p'
+        Viewport.Width = 638.000000000000000000
+        Viewport.Height = 452.000000000000000000
+      end
+    end
+    object tiHTMLSource: TTabItem
+      CustomIcon = <
+        item
+        end>
+      TextSettings.Trimming = None
+      IsSelected = True
+      Size.Width = 91.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = '&HTML Source'
+      ExplicitSize.cx = 91.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object edtSource: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Align = Client
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Size.Width = 638.000000000000000000
+        Size.Height = 452.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Viewport.Width = 634.000000000000000000
+        Viewport.Height = 448.000000000000000000
+      end
+    end
+  end
+end
