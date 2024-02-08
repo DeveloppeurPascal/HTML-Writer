@@ -15,7 +15,12 @@ object Form1: TForm1
   object MainMenu1: TMainMenu
     Left = 296
     Top = 136
+    object mnuMacOS: TMenuItem
+      Locked = True
+      Text = 'mnuMacOS'
+    end
     object mnuFichier: TMenuItem
+      Locked = True
       Text = '&Fichier'
       object mnuQuitter: TMenuItem
         Locked = True

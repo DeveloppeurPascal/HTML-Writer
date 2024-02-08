@@ -19,12 +19,12 @@ uses
   FMX.ScrollBox,
   FMX.Memo,
   FMX.Layouts,
-  FMX.fhtmlcomp,
-  FMX.fhtmledit,
   FMX.Controls.Presentation,
   FMX.StdCtrls,
   FMX.TabControl,
-  uDMLogo;
+  uDMLogo,
+  FMX.fhtmlcomp,
+  FMX.fhtmledit;
 
 type
   TForm1 = class(TForm)
@@ -39,6 +39,7 @@ type
     tiHTMLSource: TTabItem;
     edtWYSIWYG: THtmlEditor;
     edtSource: TMemo;
+    mnuMacOS: TMenuItem;
     procedure FormCreate(Sender: TObject);
     procedure mnuQuitterClick(Sender: TObject);
     procedure FormCloseQuery(Sender: TObject; var CanClose: Boolean);
@@ -74,6 +75,17 @@ begin
   InitMainFormCaption;
   TabControl1.ActiveTab := tiWYSIWYG;
   mnuAPropos.Text := mnuAPropos.Text.trim + ' ' + OlfAboutDialog1.titre;
+
+  // Adaptation du menu pour macOS
+{$IFDEF MACOS}
+  mnuMacOS.Visible := true;
+  mnuQuitter.Visible := false; // existe par défaut dans "mnuMacOS"
+  mnuFichier.Visible := false; // puisque plus d'option dessous
+  mnuAPropos.parent := mnuMacOS; // "à propos" dans "mnuMacOS" par convention
+  mnuAide.Visible := false; // puisque plus d'options dessous
+{$ELSE}
+  mnuMacOS.Visible := false;
+{$ENDIF}
 end;
 
 procedure TForm1.InitMainFormCaption;
