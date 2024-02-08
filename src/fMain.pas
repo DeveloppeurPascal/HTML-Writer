@@ -23,7 +23,8 @@ uses
   FMX.fhtmledit,
   FMX.Controls.Presentation,
   FMX.StdCtrls,
-  FMX.TabControl;
+  FMX.TabControl,
+  uDMLogo;
 
 type
   TForm1 = class(TForm)

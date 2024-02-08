@@ -39,6 +39,8 @@ object Form1: TForm1
     MultiResBitmap = <
       item
       end>
+    Images = DMLogo.imgLogo
+    ImageIndex = 0
     URL = 'https://htmlwriter.olfsoftware.fr'
     Licence.Strings = (
       
@@ -74,7 +76,7 @@ object Form1: TForm1
     Size.Width = 640.000000000000000000
     Size.Height = 480.000000000000000000
     Size.PlatformDefault = False
-    TabIndex = 1
+    TabIndex = 0
     TabOrder = 2
     TabPosition = Bottom
     OnChange = TabControl1Change
@@ -88,7 +90,7 @@ object Form1: TForm1
         item
         end>
       TextSettings.Trimming = None
-      IsSelected = False
+      IsSelected = True
       Size.Width = 74.000000000000000000
       Size.Height = 26.000000000000000000
       Size.PlatformDefault = False
@@ -138,7 +140,7 @@ object Form1: TForm1
         item
         end>
       TextSettings.Trimming = None
-      IsSelected = True
+      IsSelected = False
       Size.Width = 91.000000000000000000
       Size.Height = 26.000000000000000000
       Size.PlatformDefault = False
