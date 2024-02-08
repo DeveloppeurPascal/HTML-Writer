@@ -22,7 +22,8 @@ uses
   FMX.fhtmlcomp,
   FMX.fhtmledit,
   FMX.Controls.Presentation,
-  FMX.StdCtrls, FMX.TabControl;
+  FMX.StdCtrls,
+  FMX.TabControl;
 
 type
   TForm1 = class(TForm)
@@ -71,6 +72,7 @@ procedure TForm1.FormCreate(Sender: TObject);
 begin
   InitMainFormCaption;
   TabControl1.ActiveTab := tiWYSIWYG;
+  mnuAPropos.Text := mnuAPropos.Text.trim + ' ' + OlfAboutDialog1.titre;
 end;
 
 procedure TForm1.InitMainFormCaption;
@@ -114,7 +116,7 @@ begin
   end;
   if TabControl1.ActiveTab = tiHTMLSource then
   begin
-    edtSource.text := edtWYSIWYG.Doc.InnerHTML;
+    edtSource.Text := edtWYSIWYG.Doc.InnerHTML;
     tthread.ForceQueue(nil,
       procedure
       begin
