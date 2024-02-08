@@ -28,6 +28,33 @@ object Form1: TForm1
         OnClick = mnuQuitterClick
       end
     end
+    object mnuEdition: TMenuItem
+      Text = '&Edition'
+      object mnuCouper: TMenuItem
+        Locked = True
+        ShortCut = 16472
+        Text = 'Cou&per'
+        OnClick = mnuCouperClick
+      end
+      object mnuCopier: TMenuItem
+        Locked = True
+        ShortCut = 16451
+        Text = '&Copier'
+        OnClick = mnuCopierClick
+      end
+      object mnuColler: TMenuItem
+        Locked = True
+        ShortCut = 16470
+        Text = 'Co&ller'
+        OnClick = mnuCollerClick
+      end
+      object mnuToutSelectionner: TMenuItem
+        Locked = True
+        ShortCut = 16449
+        Text = 'T&out s'#233'lectionner'
+        OnClick = mnuToutSelectionnerClick
+      end
+    end
     object mnuAide: TMenuItem
       Text = '&Aide'
       object mnuAPropos: TMenuItem
@@ -40,7 +67,7 @@ object Form1: TForm1
   object OlfAboutDialog1: TOlfAboutDialog
     Titre = 'HTML Writer'
     VersionNumero = '1.0'
-    VersionDate = '20240207'
+    VersionDate = '20240208'
     MultiResBitmap = <
       item
       end>
@@ -59,6 +86,10 @@ object Form1: TForm1
         '), merci de ne pas oublier l'#39'auteur et de contribuer '#224' son d'#233'vel' +
         'oppement par l'#39'achat d'#39'une licence.'
       ''
+      
+        'La saisie HTML se fait par l'#39'interm'#233'diaire de la librairie Delph' +
+        'i HTML Components de Alexander Sviridenkov.'
+      ''
       '--'
       ''
       
@@ -70,7 +101,11 @@ object Form1: TForm1
         'This program is distributed as shareware. If you use it (especia' +
         'lly for commercial or income-generating purposes), please rememb' +
         'er the author and contribute to its development by purchasing a ' +
-        'license.')
+        'license.'
+      ''
+      
+        'HTML input is provided by Alexander Sviridenkov'#39's Delphi HTML Co' +
+        'mponents library.')
     onURLClick = OlfAboutDialog1URLClick
     Langue = FR
     Left = 464
@@ -169,6 +204,37 @@ object Form1: TForm1
         Viewport.Width = 634.000000000000000000
         Viewport.Height = 448.000000000000000000
       end
+    end
+  end
+  object ActionList1: TActionList
+    Left = 416
+    Top = 320
+    object HtActionCopy1: THtActionCopy
+      Category = 'HtmlEdit'
+      Text = '&Copy'
+      Hint = '&Copy'
+      ImageIndex = 17
+      ShortCut = 16451
+      Editor = edtWYSIWYG
+      ImageIndex = 17
+    end
+    object HtActionCut1: THtActionCut
+      Category = 'HtmlEdit'
+      Text = '&Cut'
+      Hint = 'Cut'
+      ImageIndex = 40
+      ShortCut = 16472
+      Editor = edtWYSIWYG
+      ImageIndex = 40
+    end
+    object HtActionPaste1: THtActionPaste
+      Category = 'HtmlEdit'
+      Text = '&Paste'
+      Hint = '&Paste'
+      ImageIndex = 5
+      ShortCut = 16470
+      Editor = edtWYSIWYG
+      ImageIndex = 5
     end
   end
 end

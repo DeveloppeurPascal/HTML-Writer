@@ -24,7 +24,10 @@ uses
   FMX.TabControl,
   uDMLogo,
   FMX.fhtmlcomp,
-  FMX.fhtmledit;
+  FMX.fhtmledit,
+  FMX.fhteditactions,
+  System.Actions,
+  FMX.ActnList;
 
 type
   TForm1 = class(TForm)
@@ -40,12 +43,25 @@ type
     edtWYSIWYG: THtmlEditor;
     edtSource: TMemo;
     mnuMacOS: TMenuItem;
+    mnuEdition: TMenuItem;
+    mnuCouper: TMenuItem;
+    mnuCopier: TMenuItem;
+    mnuColler: TMenuItem;
+    mnuToutSelectionner: TMenuItem;
+    ActionList1: TActionList;
+    HtActionCopy1: THtActionCopy;
+    HtActionCut1: THtActionCut;
+    HtActionPaste1: THtActionPaste;
     procedure FormCreate(Sender: TObject);
     procedure mnuQuitterClick(Sender: TObject);
     procedure FormCloseQuery(Sender: TObject; var CanClose: Boolean);
     procedure mnuAProposClick(Sender: TObject);
     procedure OlfAboutDialog1URLClick(const AURL: string);
     procedure TabControl1Change(Sender: TObject);
+    procedure mnuCollerClick(Sender: TObject);
+    procedure mnuCopierClick(Sender: TObject);
+    procedure mnuCouperClick(Sender: TObject);
+    procedure mnuToutSelectionnerClick(Sender: TObject);
   private
     { Déclarations privées }
   protected
@@ -106,9 +122,41 @@ begin
   OlfAboutDialog1.Execute;
 end;
 
+procedure TForm1.mnuCollerClick(Sender: TObject);
+begin
+  if TabControl1.ActiveTab = tiWYSIWYG then
+    HtActionPaste1.Execute
+  else
+    edtSource.PasteFromClipboard;
+end;
+
+procedure TForm1.mnuCopierClick(Sender: TObject);
+begin
+  if TabControl1.ActiveTab = tiWYSIWYG then
+    HtActionCopy1.Execute
+  else
+    edtSource.CopyToClipboard;
+end;
+
+procedure TForm1.mnuCouperClick(Sender: TObject);
+begin
+  if TabControl1.ActiveTab = tiWYSIWYG then
+    HtActionCut1.Execute
+  else
+    edtSource.CutToClipboard;
+end;
+
 procedure TForm1.mnuQuitterClick(Sender: TObject);
 begin
   close;
+end;
+
+procedure TForm1.mnuToutSelectionnerClick(Sender: TObject);
+begin
+  if TabControl1.ActiveTab = tiWYSIWYG then
+    edtWYSIWYG.SelectAll
+  else
+    edtSource.SelectAll;
 end;
 
 procedure TForm1.OlfAboutDialog1URLClick(const AURL: string);
