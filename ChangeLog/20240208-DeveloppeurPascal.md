@@ -12,3 +12,7 @@
 * mise à jour des informations de version pour toutes les plateformes
 * ajout d'un menu "édition" avec couper/copier/coller/tout sélectionner
 * release v1.0 - 20240208 (Windows & Mac)
+
+--
+
+* ajout favicon.ico à partir de l'icone Windows
