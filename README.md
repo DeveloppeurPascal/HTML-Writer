@@ -14,13 +14,13 @@ This software is available in a directly installable or executable production ve
 
 You can download and redistribute it free of charge, provided you do not modify its content (installer, program, additional files, etc.).
 
-[Download program or installer](DDD) (soon)
+[Download program or installer](https://olfsoftware.lemonsqueezy.com/checkout/buy/97d7e6d0-9793-489e-aa2f-adf913cae625) (Windows)
 
 If you use this software regularly and are satisfied with it, you are invited to purchase an end-user license. Purchasing a license will give you access to software updates, as well as enabling optional features.
 
-[Buy a license](FFF) (soon)
+[Buy a license](https://olfsoftware.lemonsqueezy.com/checkout/buy/5c125a44-424b-4d39-a2bf-46b72fb111c3) (Windows)
 
-You can also [visit the software website](EEE) to find out more about how it works, access videos and articles, find out about the different versions available and their features, contact user support...
+You can also [visit the software website](https://htmlwriter.olfsoftware.fr/) to find out more about how it works, access videos and articles, find out about the different versions available and their features, contact user support...
 
 ## Source code installation
 
