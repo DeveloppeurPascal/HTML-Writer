@@ -2,7 +2,7 @@
 
 [Cette page en français.](LISEZMOI.md)
 
-This program is a simple WYSIWYG HTML code or HTML block editor. It is developed natively in Delphi using the [Delphi HTML Components] library (https://delphihtmlcomponents.com/), so there's no need to depend on a third-party utility (browser or other).
+This program is a simple WYSIWYG HTML code or HTML block editor. It is developed natively in Delphi using the [Delphi HTML Components](https://delphihtmlcomponents.com/) library, so there's no need to depend on a third-party utility (browser or other).
 
 The project is available for Windows, Mac and Linux.
 
