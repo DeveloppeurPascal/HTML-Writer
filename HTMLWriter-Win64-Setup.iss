@@ -34,7 +34,7 @@ Name: "fr"; MessagesFile: "compiler:Languages\French.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: ".\Win64\Release\HTMLWriter.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "src\Win64\Release\HTMLWriter.exe"; DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]
 Name: "{commonprograms}\{#MyAppName}\HTML Writer (64 bits)"; Filename: "{app}\{#MyAppExeName}"
