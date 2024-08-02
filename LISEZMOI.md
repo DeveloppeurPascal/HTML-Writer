@@ -1,6 +1,6 @@
 # HTML Writer
 
-[This page in english.](README.md)
+[This page in English.](README.md)
 
 Ce programme est un simple éditeur de code HTML ou de bloc de HTML en WYSIWYG. Il est développé nativement en Delphi grâce à la librairie [Delphi HTML Components](https://delphihtmlcomponents.com/) qui permet d'éviter toute dépendance à un utils tiers (navigateur ou autre).
 
@@ -36,7 +36,7 @@ La saisie HTML se fait à l'aide de l'[éditeur WYSIWYG](https://delphihtmlcompo
 
 ## Licence d'utilisation de ce dépôt de code et de son contenu
 
-Ces codes sources sont distribués sous licence [AGPL 3.0 ou ultérieure] (https://choosealicense.com/licenses/agpl-3.0/).
+Ces codes sources sont distribués sous licence [AGPL 3.0 ou ultérieure](https://choosealicense.com/licenses/agpl-3.0/).
 
 Vous êtes globalement libre d'utiliser le contenu de ce dépôt de code n'importe où à condition :
 * d'en faire mention dans vos projets
