@@ -12,7 +12,7 @@ Ce dépôt de code contient un projet développé en langage Pascal Objet sous D
 
 ### Twitch
 
-Suivez mes streams de développement de logiciels, jeux vidéo, applications mobiles et sites web sur [ma chaîne Twitch](https://www.twitch.tv/patrickpremartin) ou en rediffusion sur [Serial Streameur](https://serialstreameur.fr) la plupart du temps en français.
+Suivez mes streams de développement de logiciels, jeux vidéo, applications mobiles et sites web sur [ma chaîne Twitch](https://www.twitch.tv/patrickpremartin) ou en rediffusion sur [Serial Streameur](https://serialstreameur.fr/html-writer.html) la plupart du temps en français.
 
 ## Utiliser ce logiciel
 
@@ -20,11 +20,11 @@ Ce logiciel est disponible dans une version de production directement installabl
 
 Vous pouvez le télécharger et le rediffuser gratuitement à condition de ne pas en modifier le contenu (installeur, programme, fichiers annexes, ...).
 
-[Télécharger le programme ou son installeur](https://olfsoftware.lemonsqueezy.com/checkout/buy/97d7e6d0-9793-489e-aa2f-adf913cae625) (Windows)
+[Télécharger le programme ou son installeur](https://olfsoftware.lemonsqueezy.com/checkout/buy/97d7e6d0-9793-489e-aa2f-adf913cae625)
 
 Si vous utilisez régulièrement ce logiciel et en êtes satisfait vous êtes invité à en acheter une licence d'utilisateur final. L'achat d'une licence vous donnera accès aux mises à jour du logiciel en plus d'activer d'évenuelles fonctionnalités optionnelles.
 
-[Acheter une licence](https://olfsoftware.lemonsqueezy.com/checkout/buy/5c125a44-424b-4d39-a2bf-46b72fb111c3) (Windows)
+[Acheter une licence](https://store.olfsoftware.fr/logiciels-pour-developpeurs-c-3/developpement-web-c-9/html-writer-p-7)
 
 Vous pouvez aussi [consulter le site du logiciel](https://htmlwriter.olfsoftware.fr/) pour en savoir plus sur son fonctionnement, accéder à des vidéos et articles, connaître les différentes versions disponibles et leurs fonctionnalités, contacter le support utilisateurs...
 
@@ -39,6 +39,16 @@ Ce projet utilise des dépendances sous forme de sous modules. Ils seront absent
 * [DeveloppeurPascal/DeepL4Delphi](https://github.com/DeveloppeurPascal/DeepL4Delphi) doit être installé dans le sous dossier ./lib-externes/DeepL4Delphi
 
 La saisie HTML se fait à l'aide de l'[éditeur WYSIWYG](https://delphihtmlcomponents.com/editor.html) (natif Delphi) disponible dans [Delphi HTML Components](https://delphihtmlcomponents.com/). Une licence de cette librairie est nécessaire si vous désirez recompiler le projet tel quel.
+
+## Compatibilité
+
+En tant que [MVP Embarcadero](https://www.embarcadero.com/resources/partners/mvp-directory) je bénéficie dès qu'elles sortent des dernières versions de [Delphi](https://www.embarcadero.com/products/delphi) et [C++ Builder](https://www.embarcadero.com/products/cbuilder) dans [RAD Studio](https://www.embarcadero.com/products/rad-studio). C'est donc dans ces versions que je travaille.
+
+Normalement mes librairies et composants doivent aussi fonctionner au moins sur la version en cours de [Delphi Community Edition](https://www.embarcadero.com/products/delphi/starter).
+
+Aucune garantie de compatibilité avec des versions antérieures n'est fournie même si je m'efforce de faire du code propre et ne pas trop utiliser les nouvelles façons d'écrire dedans (type inference, inline var et multilines strings).
+
+Si vous détectez des anomalies sur des versions antérieures n'hésitez pas à [les rapporter](https://github.com/DeveloppeurPascal/HTMLwriter/issues) pour que je teste et tente de corriger ou fournir un contournement.
 
 ## Licence d'utilisation de ce dépôt de code et de son contenu
 

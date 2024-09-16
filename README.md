@@ -12,7 +12,7 @@ This code repository contains a project developed in Object Pascal language unde
 
 ### Twitch
 
-Follow my development streams of software, video games, mobile applications and websites on [my Twitch channel](https://www.twitch.tv/patrickpremartin) or as replays on [Serial Streameur](https://serialstreameur.fr) mostly in French.
+Follow my development streams of software, video games, mobile applications and websites on [my Twitch channel](https://www.twitch.tv/patrickpremartin) or as replays on [Serial Streameur](https://serialstreameur.fr/html-writer.html) mostly in French.
 
 ## Using this software
 
@@ -20,11 +20,11 @@ This software is available in a directly installable or executable production ve
 
 You can download and redistribute it free of charge, provided you do not modify its content (installer, program, additional files, etc.).
 
-[Download program or installer](https://olfsoftware.lemonsqueezy.com/checkout/buy/97d7e6d0-9793-489e-aa2f-adf913cae625) (Windows)
+[Download program or installer](https://olfsoftware.lemonsqueezy.com/checkout/buy/97d7e6d0-9793-489e-aa2f-adf913cae625)
 
 If you use this software regularly and are satisfied with it, you are invited to purchase an end-user license. Purchasing a license will give you access to software updates, as well as enabling optional features.
 
-[Buy a license](https://olfsoftware.lemonsqueezy.com/checkout/buy/5c125a44-424b-4d39-a2bf-46b72fb111c3) (Windows)
+[Buy a license](https://store.olfsoftware.fr/en/developer-software-c-3/web-development-c-9/html-writer-p-7)
 
 You can also [visit the software website](https://htmlwriter.olfsoftware.fr/) to find out more about how it works, access videos and articles, find out about the different versions available and their features, contact user support...
 
@@ -39,6 +39,16 @@ This project uses dependencies in the form of sub-modules. They will be absent f
 * [DeveloppeurPascal/DeepL4Delphi](https://github.com/DeveloppeurPascal/DeepL4Delphi) must be installed in the ./lib-externes/DeepL4Delphi subfolder.
 
 HTML input is performed using the [WYSIWYG editor](https://delphihtmlcomponents.com/editor.html) (native Delphi) available in [Delphi HTML Components](https://delphihtmlcomponents.com/). A license for this library is required if you wish to recompile the project as is.
+
+## Compatibility
+
+As an [Embarcadero MVP](https://www.embarcadero.com/resources/partners/mvp-directory), I benefit from the latest versions of [Delphi](https://www.embarcadero.com/products/delphi) and [C++ Builder](https://www.embarcadero.com/products/cbuilder) in [RAD Studio](https://www.embarcadero.com/products/rad-studio) as soon as they are released. I therefore work with these versions.
+
+Normally, my libraries and components should also run on at least the current version of [Delphi Community Edition](https://www.embarcadero.com/products/delphi/starter).
+
+There's no guarantee of compatibility with earlier versions, even though I try to keep my code clean and avoid using too many of the new ways of writing in it (type inference, inline var and multiline strings).
+
+If you detect any anomalies on earlier versions, please don't hesitate to [report them](https://github.com/DeveloppeurPascal/HTMLwriter/issues) so that I can test and try to correct or provide a workaround.
 
 ## License to use this code repository and its contents
 
