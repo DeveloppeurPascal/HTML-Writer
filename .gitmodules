@@ -10,3 +10,6 @@
 [submodule "lib-externes/FMX-Tools-Starter-Kit"]
 	path = lib-externes/FMX-Tools-Starter-Kit
 	url = https://github.com/DeveloppeurPascal/FMX-Tools-Starter-Kit.git
+[submodule "lib-externes/CilTseg4Delphi"]
+	path = lib-externes/CilTseg4Delphi
+	url = https://github.com/DeveloppeurPascal/CilTseg4Delphi
