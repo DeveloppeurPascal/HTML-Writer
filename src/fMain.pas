@@ -1,3 +1,40 @@
+ï»¿/// <summary>
+/// ***************************************************************************
+///
+/// HTML Writer
+///
+/// Copyright 2024-2025 Patrick PREMARTIN under AGPL 3.0 license.
+///
+/// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+/// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+/// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+/// THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+/// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+/// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+/// DEALINGS IN THE SOFTWARE.
+///
+/// ***************************************************************************
+///
+/// A very simple HTML source and WYSIWYG editor for webmasters and content
+/// creators.
+///
+/// ***************************************************************************
+///
+/// Author(s) :
+/// Patrick PREMARTIN
+///
+/// Site :
+/// https://htmlwriter.olfsoftware.fr/
+///
+/// Project site :
+/// https://github.com/DeveloppeurPascal/HTML-Writer
+///
+/// ***************************************************************************
+/// File last update : 2025-02-27T20:30:46.000+01:00
+/// Signature : 8dcec4d01ae19277f566f38aa7d07cdeeacb5438
+/// ***************************************************************************
+/// </summary>
+
 unit fMain;
 
 interface
@@ -9,162 +46,51 @@ uses
   System.Classes,
   System.Variants,
   FMX.Types,
+  FMX.Graphics,
   FMX.Controls,
   FMX.Forms,
-  FMX.Graphics,
   FMX.Dialogs,
-  Olf.FMX.AboutDialog,
-  FMX.Menus,
-  FMX.Memo.Types,
-  FMX.ScrollBox,
-  FMX.Memo,
-  FMX.Layouts,
-  FMX.Controls.Presentation,
   FMX.StdCtrls,
-  FMX.TabControl,
-  uDMLogo,
-  FMX.fhtmlcomp,
-  FMX.fhtmledit,
-  FMX.fhteditactions,
+  _MainFormAncestor,
   System.Actions,
-  FMX.ActnList;
+  FMX.ActnList,
+  FMX.Menus,
+  uDocumentsAncestor, FMX.Memo.Types, fmx.fhteditactions,
+  FMX.Controls.Presentation, FMX.ScrollBox, FMX.Memo, FMX.Layouts,
+  fmx.fhtmlcomp, fmx.fhtmledit, FMX.TabControl;
 
 type
-  TForm1 = class(TForm)
-    MainMenu1: TMainMenu;
-    OlfAboutDialog1: TOlfAboutDialog;
-    mnuFichier: TMenuItem;
-    mnuAide: TMenuItem;
-    mnuQuitter: TMenuItem;
-    mnuAPropos: TMenuItem;
+  TMainForm = class(T__MainFormAncestor)
     TabControl1: TTabControl;
     tiWYSIWYG: TTabItem;
-    tiHTMLSource: TTabItem;
     edtWYSIWYG: THtmlEditor;
+    tiHTMLSource: TTabItem;
     edtSource: TMemo;
-    mnuMacOS: TMenuItem;
-    mnuEdition: TMenuItem;
-    mnuCouper: TMenuItem;
-    mnuCopier: TMenuItem;
-    mnuColler: TMenuItem;
-    mnuToutSelectionner: TMenuItem;
     ActionList1: TActionList;
     HtActionCopy1: THtActionCopy;
     HtActionCut1: THtActionCut;
     HtActionPaste1: THtActionPaste;
     procedure FormCreate(Sender: TObject);
-    procedure mnuQuitterClick(Sender: TObject);
-    procedure FormCloseQuery(Sender: TObject; var CanClose: Boolean);
-    procedure mnuAProposClick(Sender: TObject);
-    procedure OlfAboutDialog1URLClick(const AURL: string);
     procedure TabControl1Change(Sender: TObject);
-    procedure mnuCollerClick(Sender: TObject);
-    procedure mnuCopierClick(Sender: TObject);
-    procedure mnuCouperClick(Sender: TObject);
-    procedure mnuToutSelectionnerClick(Sender: TObject);
   private
-    { Déclarations privées }
   protected
-    FApplyChange: Boolean;
-    procedure InitMainFormCaption;
   public
-    { Déclarations publiques }
+
   end;
 
 var
-  Form1: TForm1;
+  MainForm: TMainForm;
 
 implementation
 
 {$R *.fmx}
 
-uses
-  u_urlOpen;
-
-procedure TForm1.FormCloseQuery(Sender: TObject; var CanClose: Boolean);
+procedure TMainForm.FormCreate(Sender: TObject);
 begin
-  // TODO : demander confirmation si l'un des champs de saisie a été modifié
-end;
-
-procedure TForm1.FormCreate(Sender: TObject);
-begin
-  InitMainFormCaption;
   TabControl1.ActiveTab := tiWYSIWYG;
-  mnuAPropos.Text := mnuAPropos.Text.trim + ' ' + OlfAboutDialog1.titre;
-
-  // Adaptation du menu pour macOS
-{$IFDEF MACOS}
-  mnuMacOS.Visible := true;
-  mnuQuitter.Visible := false; // existe par défaut dans "mnuMacOS"
-  mnuFichier.Visible := false; // puisque plus d'option dessous
-  mnuAPropos.parent := mnuMacOS; // "à propos" dans "mnuMacOS" par convention
-  mnuAide.Visible := false; // puisque plus d'options dessous
-{$ELSE}
-  mnuMacOS.Visible := false;
-{$ENDIF}
 end;
 
-procedure TForm1.InitMainFormCaption;
-begin
-{$IFDEF DEBUG}
-  caption := '[DEBUG] ';
-{$ELSE}
-  caption := '';
-{$ENDIF}
-  caption := caption + OlfAboutDialog1.titre + ' v' +
-    OlfAboutDialog1.VersionNumero;
-
-  FApplyChange := true;
-end;
-
-procedure TForm1.mnuAProposClick(Sender: TObject);
-begin
-  OlfAboutDialog1.Execute;
-end;
-
-procedure TForm1.mnuCollerClick(Sender: TObject);
-begin
-  if TabControl1.ActiveTab = tiWYSIWYG then
-    HtActionPaste1.Execute
-  else
-    edtSource.PasteFromClipboard;
-end;
-
-procedure TForm1.mnuCopierClick(Sender: TObject);
-begin
-  if TabControl1.ActiveTab = tiWYSIWYG then
-    HtActionCopy1.Execute
-  else
-    edtSource.CopyToClipboard;
-end;
-
-procedure TForm1.mnuCouperClick(Sender: TObject);
-begin
-  if TabControl1.ActiveTab = tiWYSIWYG then
-    HtActionCut1.Execute
-  else
-    edtSource.CutToClipboard;
-end;
-
-procedure TForm1.mnuQuitterClick(Sender: TObject);
-begin
-  close;
-end;
-
-procedure TForm1.mnuToutSelectionnerClick(Sender: TObject);
-begin
-  if TabControl1.ActiveTab = tiWYSIWYG then
-    edtWYSIWYG.SelectAll
-  else
-    edtSource.SelectAll;
-end;
-
-procedure TForm1.OlfAboutDialog1URLClick(const AURL: string);
-begin
-  url_Open_In_Browser(AURL);
-end;
-
-procedure TForm1.TabControl1Change(Sender: TObject);
+procedure TMainForm.TabControl1Change(Sender: TObject);
 begin
   if TabControl1.ActiveTab = tiWYSIWYG then
   begin
