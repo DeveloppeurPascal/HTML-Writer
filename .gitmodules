@@ -7,3 +7,6 @@
 [submodule "lib-externes/DeepL4Delphi"]
 	path = lib-externes/DeepL4Delphi
 	url = https://github.com/DeveloppeurPascal/DeepL4Delphi.git
+[submodule "lib-externes/FMX-Tools-Starter-Kit"]
+	path = lib-externes/FMX-Tools-Starter-Kit
+	url = https://github.com/DeveloppeurPascal/FMX-Tools-Starter-Kit.git
