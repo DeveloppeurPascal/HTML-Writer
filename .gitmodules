@@ -13,3 +13,6 @@
 [submodule "lib-externes/CilTseg4Delphi"]
 	path = lib-externes/CilTseg4Delphi
 	url = https://github.com/DeveloppeurPascal/CilTseg4Delphi
+[submodule "lib-externes/Delphi-FMXExtend-Library"]
+	path = lib-externes/Delphi-FMXExtend-Library
+	url = https://github.com/DeveloppeurPascal/Delphi-FMXExtend-Library.git
