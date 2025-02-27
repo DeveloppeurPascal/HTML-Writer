@@ -30,8 +30,8 @@
 /// https://github.com/DeveloppeurPascal/HTML-Writer
 ///
 /// ***************************************************************************
-/// File last update : 2025-02-27T20:30:46.000+01:00
-/// Signature : 8dcec4d01ae19277f566f38aa7d07cdeeacb5438
+/// File last update : 2025-02-27T21:27:44.000+01:00
+/// Signature : 89e9905a428741a3159c2a85c13e2ed21a97ac35
 /// ***************************************************************************
 /// </summary>
 
@@ -55,9 +55,16 @@ uses
   System.Actions,
   FMX.ActnList,
   FMX.Menus,
-  uDocumentsAncestor, FMX.Memo.Types, fmx.fhteditactions,
-  FMX.Controls.Presentation, FMX.ScrollBox, FMX.Memo, FMX.Layouts,
-  fmx.fhtmlcomp, fmx.fhtmledit, FMX.TabControl;
+  uDocumentsAncestor,
+  FMX.Memo.Types,
+  FMX.fhteditactions,
+  FMX.Controls.Presentation,
+  FMX.ScrollBox,
+  FMX.Memo,
+  FMX.Layouts,
+  FMX.fhtmlcomp,
+  FMX.fhtmledit,
+  FMX.TabControl;
 
 type
   TMainForm = class(T__MainFormAncestor)
@@ -75,7 +82,6 @@ type
   private
   protected
   public
-
   end;
 
 var
