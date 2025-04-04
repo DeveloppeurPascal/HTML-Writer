@@ -2686,6 +2686,10 @@
                                                   <param name="Local" value="fToolsLanguagesDialog.TfrmToolsLanguagesDialog.ChangeSelectedLanguage.html">
                                                   </OBJECT>
                                               <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="FormClose">
+                                                  <param name="Local" value="fToolsLanguagesDialog.TfrmToolsLanguagesDialog.FormClose.html">
+                                                  </OBJECT>
+                                              <LI> <OBJECT type="text/sitemap">
                                                   <param name="Name" value="FormCreate">
                                                   <param name="Local" value="fToolsLanguagesDialog.TfrmToolsLanguagesDialog.FormCreate.html">
                                                   </OBJECT>
@@ -3817,10 +3821,6 @@
                                                   <param name="Local" value="uStyleManager.TProjectStyle.Current.html">
                                                   </OBJECT>
                                               <LI> <OBJECT type="text/sitemap">
-                                                  <param name="Name" value="EnableDefaultStyle">
-                                                  <param name="Local" value="uStyleManager.TProjectStyle.EnableDefaultStyle.html">
-                                                  </OBJECT>
-                                              <LI> <OBJECT type="text/sitemap">
                                                   <param name="Name" value="GetStyles">
                                                   <param name="Local" value="uStyleManager.TProjectStyle.GetStyles.html">
                                                   </OBJECT>
@@ -3888,6 +3888,32 @@
                                           <param name="Name" value="other">
                                           <param name="Local" value="uStyleManager.TProjectStyleType.other.html">
                                           </OBJECT>
+                                  </UL>
+                          </UL>
+                  </UL>
+              <LI> <OBJECT type="text/sitemap">
+                  <param name="Name" value="uStyleManagerHelpers">
+                  <param name="Local" value="uStyleManagerHelpers.html">
+                  </OBJECT>
+                  <UL>
+                      <LI> <OBJECT type="text/sitemap">
+                          <param name="Name" value="Helpers">
+                          </OBJECT>
+                          <UL>
+                              <LI> <OBJECT type="text/sitemap">
+                                  <param name="Name" value="TProjectStyleHelpers">
+                                  <param name="Local" value="uStyleManagerHelpers.TProjectStyleHelpers.html">
+                                  </OBJECT>
+                                  <UL>
+                                      <LI> <OBJECT type="text/sitemap">
+                                          <param name="Name" value="Methods">
+                                          </OBJECT>
+                                          <UL>
+                                              <LI> <OBJECT type="text/sitemap">
+                                                  <param name="Name" value="EnableDefaultStyle">
+                                                  <param name="Local" value="uStyleManagerHelpers.TProjectStyleHelpers.EnableDefaultStyle.html">
+                                                  </OBJECT>
+                                          </UL>
                                   </UL>
                           </UL>
                   </UL>
