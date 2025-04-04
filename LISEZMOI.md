@@ -28,6 +28,7 @@ Ce projet utilise des dépendances sous forme de sous modules. Ils seront absent
 * [DeveloppeurPascal/CilTseg4Delphi](https://github.com/DeveloppeurPascal/CilTseg4Delphi) doit être installé dans le sous dossier ./lib-externes/CilTseg4Delphi
 * [DeveloppeurPascal/DeepL4Delphi](https://github.com/DeveloppeurPascal/DeepL4Delphi) doit être installé dans le sous dossier ./lib-externes/DeepL4Delphi
 * [DeveloppeurPascal/Delphi-FMXExtend-Library](https://github.com/DeveloppeurPascal/Delphi-FMXExtend-Library) doit être installé dans le sous dossier ./lib-externes/Delphi-FMXExtend-Library
+* [DeveloppeurPascal/FMX-Styles-Utils](https://github.com/DeveloppeurPascal/FMX-Styles-Utils) doit être installé dans le sous dossier ./lib-externes/FMX-Styles-Utils
 * [DeveloppeurPascal/FMX-Tools-Starter-Kit](https://github.com/DeveloppeurPascal/FMX-Tools-Starter-Kit) doit être installé dans le sous dossier ./lib-externes/FMX-Tools-Starter-Kit
 * [DeveloppeurPascal/librairies](https://github.com/DeveloppeurPascal/librairies) doit être installé dans le sous dossier ./lib-externes/librairies
 
