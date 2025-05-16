@@ -30,8 +30,8 @@
 /// https://github.com/DeveloppeurPascal/HTML-Writer
 ///
 /// ***************************************************************************
-/// File last update : 2025-02-27T21:54:58.000+01:00
-/// Signature : 48c369ba5a2f3e1472f54598123b1d4ae10afa09
+/// File last update : 2025-05-16T20:17:46.000+02:00
+/// Signature : 0127964bfaa1eec076e70223034e23aecdc22d97
 /// ***************************************************************************
 /// </summary>
 
@@ -84,12 +84,14 @@ const
   /// The URL where you can buy the software.
   /// (if not empty, a "Buy" button is added in the About Box)
   /// </summary>
-  CSoftwareBuyURL = 'https://store.olfsoftware.fr/en/developer-software-c-3/web-development-c-9/html-writer-p-7';
+  CSoftwareBuyURL =
+    'https://store.olfsoftware.fr/en/developer-software-c-3/web-development-c-9/html-writer-p-7';
 
   /// <summary>
   /// Website open by Tools / Support menu option
   /// </summary>
-  CSupportURL = '';
+  CSupportURL = 'https://olfsoftware.fr/contact/';
+  // TODO : à rediriger vers le site final de HTML Writer lorsqu'il sera en ligne
 
   /// <summary>
   /// Used as a folder name to store your projects settings
