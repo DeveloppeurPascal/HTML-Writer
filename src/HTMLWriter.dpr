@@ -30,8 +30,8 @@
 /// https://github.com/DeveloppeurPascal/HTML-Writer
 ///
 /// ***************************************************************************
-/// File last update : 2025-04-04T11:40:54.000+02:00
-/// Signature : 175e5ddce64e85d5583f659477bbfb771dc2fcbc
+/// File last update : 2025-05-16T19:59:06.000+02:00
+/// Signature : 47608abaa435ac07c40f66eb99addb1280bf8dd6
 /// ***************************************************************************
 /// </summary>
 
@@ -76,7 +76,8 @@ uses
   uStyleManager in '..\lib-externes\FMX-Styles-Utils\src\uStyleManager.pas',
   uStyleDarkByDefault in '..\lib-externes\FMX-Styles-Utils\samples\DarkLightSampleProject\uStyleDarkByDefault.pas' {StyleDarkByDefault: TDataModule},
   uStyleLightByDefault in '..\lib-externes\FMX-Styles-Utils\samples\DarkLightSampleProject\uStyleLightByDefault.pas' {StyleLightByDefault: TDataModule},
-  uStyleManagerHelpers in '..\lib-externes\FMX-Tools-Starter-Kit\src\uStyleManagerHelpers.pas';
+  uStyleManagerHelpers in '..\lib-externes\FMX-Tools-Starter-Kit\src\uStyleManagerHelpers.pas',
+  uGetDeviceName in '..\lib-externes\librairies\src\uGetDeviceName.pas';
 
 {$R *.res}
 

@@ -5,11 +5,10 @@
         <FrameworkType>FMX</FrameworkType>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
-        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+        <Platform Condition="'$(Platform)'==''">OSXARM64</Platform>
         <TargetedPlatforms>135171</TargetedPlatforms>
         <AppType>Application</AppType>
         <MainSource>HTMLWriter.dpr</MainSource>
-        <ProjectName Condition="'$(ProjectName)'==''">HTMLWriter</ProjectName>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
         <Base>true</Base>
@@ -602,6 +601,7 @@
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
         <DCCReference Include="..\lib-externes\FMX-Tools-Starter-Kit\src\uStyleManagerHelpers.pas"/>
+        <DCCReference Include="..\lib-externes\librairies\src\uGetDeviceName.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
