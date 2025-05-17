@@ -55,7 +55,7 @@ const
   /// To update when you publish a new release of this project.
   /// Don't forget to update the Version Infos in the Project/Options dialog.
   /// </remarks>
-  CAboutVersionNumber = '1.1';
+  CAboutVersionNumber = '1.1.2';
 
   /// <summary>
   /// Version date of your project.
@@ -63,7 +63,7 @@ const
   /// <remarks>
   /// To update when you publish a new release of this project.
   /// </remarks>
-  CAboutVersionDate = '20250227';
+  CAboutVersionDate = '20250517';
 
   /// <summary>
   /// Title of your project used in the About box and as the main form caption
