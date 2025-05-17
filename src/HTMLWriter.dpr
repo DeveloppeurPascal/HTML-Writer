@@ -38,6 +38,21 @@
 program HTMLWriter;
 
 uses
+  {$IFDEF EurekaLog}
+  {$IFDEF MSWINDOWS}
+  EMemLeaks,
+  EResLeaks,
+  EDebugJCL,
+  EDebugExports,
+  EFixSafeCallException,
+  EMapWin32,
+  EAppFMX,
+  EDialogWinAPIMSClassic,
+  EDialogWinAPIEurekaLogDetailed,
+  EDialogWinAPIStepsToReproduce,
+  ExceptionLog7,
+  {$ENDIF}
+  {$ENDIF EurekaLog}
   System.StartUpCopy,
   FMX.Forms,
   uConfig in '..\lib-externes\FMX-Tools-Starter-Kit\src\uConfig.pas',
@@ -86,3 +101,4 @@ begin
   Application.CreateForm(TMainForm, MainForm);
   Application.Run;
 end.
+
