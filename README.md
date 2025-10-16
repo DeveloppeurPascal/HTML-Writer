@@ -65,7 +65,7 @@ You are free to use the contents of this code repository anywhere provided :
 * distribute the modifications made to the files provided in this AGPL-licensed project (leaving the original copyright notices (author, link to this repository, license) must be supplemented by your own)
 * to distribute the source code of your creations under the AGPL license.
 
-If this license doesn't suit your needs (especially for a commercial project) I also offer [classic licenses for developers and companies](https://BBB.developpeur-pascal.fr).
+If this license doesn't suit your needs (especially for a commercial project) I also offer [classic licenses for developers and companies](https://htmlwriter.olfsoftware.fr).
 
 Some elements included in this repository may depend on third-party usage rights (images, sounds, etc.). They are not reusable in your projects unless otherwise stated.
 
